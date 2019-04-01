@@ -7,6 +7,20 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="greeter" class="org.deokki.jdbc.spring.Greeter" ></bean>
+	<bean id="memberDao" class="org.deokki.book.example.MemberDao" />
+
+
+	<!-- Greeter greeter = new org.jacob.book.chap02.Greeter() -->
+	<bean id="articleService"
+		class="org.deokki.book.example.ArticleService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
+	<!--  dependency injection, DI -->
+	<bean id="paymentService"
+		class="org.deokki.book.example.PaymentService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
 
 </beans>
