@@ -2,6 +2,7 @@
 !.gitignore
 bin
 build
+db.properties
 gradle
 gradlew*
 settings.gradle
