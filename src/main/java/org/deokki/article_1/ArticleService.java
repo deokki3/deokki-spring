@@ -15,10 +15,6 @@ public class ArticleService {
 	@Autowired
 	ArticleDao articleDao;
 
-	public void setArticleDao(ArticleDao articleDao) {
-		this.articleDao = articleDao;
-	}
-
 	/**
 	 * 글 목록
 	 */

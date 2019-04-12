@@ -30,9 +30,6 @@ public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 	/**
 	 * jdbcTemplate setter for injection
 	 */
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
 
 	/**
 	 * p.194의 memberRowMapper<br>

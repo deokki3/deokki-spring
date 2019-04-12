@@ -5,6 +5,8 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
+import org.deokki.book.chap08.MemberDaoImplUsingSpringJdbc;
+import org.deokki.book.chap08.MemberService;
 import org.mariadb.jdbc.MariaDbDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 

@@ -41,10 +41,6 @@ public class ArticleDaoImplUsingSpringJdbc implements ArticleDao {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
-
 	/**
 	 * 글 목록
 	 */

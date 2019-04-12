@@ -23,10 +23,6 @@ public class MemberService {
 	/**
 	 * memberDao setter for injection
 	 */
-	public void setMemberDao(MemberDao memberDao) {
-		this.memberDao = memberDao;
-	}
-
 	public void selectAll() {
 		List<Member> members = memberDao.selectAll(0, 100);
 		logger.debug(members);
